@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/css/page1-vars.css">
+  <link rel="stylesheet" href="/static/css/page1-style.css">
+
+  <style>
+    a,
+    button,
+    input,
+    select,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      border: none;
+      text-decoration: none;
+      background: none;
+
+      -webkit-font-smoothing: antialiased;
+    }
+
+    menu, ol, ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+
+  <title>Document</title>
+</head>
+<body>
+  <div class="tv-1">
+    <div class="frame-13">
+      <img class="rectangle-13" src="{{ url_for('static', filename='images/rectangle-130.svg') }}" />
+      <img class="rectangle-14" src="{{ url_for('static', filename='images/rectangle-140.svg') }}" />
+      <img class="rectangle-15" src="{{ url_for('static', filename='images/rectangle-150.svg') }}" />
+      <img class="rectangle-16" src="{{ url_for('static', filename='images/rectangle-160.svg') }}" />
+      <img class="rectangle-17" src="{{ url_for('static', filename='images/rectangle-170.svg') }}" />
+      <img class="vector" src="{{ url_for('static', filename='images/page1-vector0.svg') }}"  />
+      <div class="rectangle-132"></div>
+      <div class="analysis">ANALYSIS</div>
+
+      <div class="the-morgan-family-theater-presents-avengers-15-0-8-00-pm">
+        <span>
+          <span class="the-morgan-family-theater-presents-avengers-15-0-8-00-pm-span">
+            The Morgan Family Theater
+            <br />
+            PRESENTS:
+            <br />
+            <br />
+          </span>
+          <span class="the-morgan-family-theater-presents-avengers-15-0-8-00-pm-span2">
+            Avengers
+            <br />
+          </span>
+          <span class="the-morgan-family-theater-presents-avengers-15-0-8-00-pm-span3">
+            <br />
+            $15.0 | 8:00 PM
+          </span>
+        </span>
+      </div>
+
+      <div class="the-morgan-family-theater-presents-inception-10-0-7-00-pm">
+        <span>
+          <span class="the-morgan-family-theater-presents-inception-10-0-7-00-pm-span">
+            The Morgan Family Theater
+            <br />
+            PRESENTS:
+            <br />
+          </span>
+          <span class="the-morgan-family-theater-presents-inception-10-0-7-00-pm-span2">
+            <br />
+            Inception
+            <br />
+          </span>
+          <span class="the-morgan-family-theater-presents-inception-10-0-7-00-pm-span3">
+            <br />
+            $10.0 | 7:00 PM
+            <br />
+          </span>
+        </span>
+      </div>
+
+      <div class="the-morgan-family-theater-presents-the-dark-knight-12-0-9-00-pm">
+        <span>
+          <span class="the-morgan-family-theater-presents-the-dark-knight-12-0-9-00-pm-span">
+            The Morgan Family Theater
+            <br />
+            PRESENTS:
+            <br />
+            <br />
+          </span>
+          <span class="the-morgan-family-theater-presents-the-dark-knight-12-0-9-00-pm-span2">
+            The Dark Knight
+            <br />
+          </span>
+          <span class="the-morgan-family-theater-presents-the-dark-knight-12-0-9-00-pm-span3">
+            <br />
+            $12.0 | 9:00 PM
+          </span>
+        </span>
+      </div>
+
+      <div class="the-morgan-family-theater-presents-interstellar-11-0-6-00-pm">
+        <span>
+          <span class="the-morgan-family-theater-presents-interstellar-11-0-6-00-pm-span">
+            The Morgan Family Theater
+            <br />
+            PRESENTS:
+            <br />
+            <br />
+          </span>
+          <span class="the-morgan-family-theater-presents-interstellar-11-0-6-00-pm-span2">
+            Interstellar
+            <br />
+          </span>
+          <span class="the-morgan-family-theater-presents-interstellar-11-0-6-00-pm-span3">
+            <br />
+            $11.0 | 6:00 PM
+          </span>
+        </span>
+      </div>
+
+      <div class="the-morgan-family-theater-presents-titanic-8-5-5-00-pm">
+        <span>
+          <span class="the-morgan-family-theater-presents-titanic-8-5-5-00-pm-span">
+            The Morgan Family Theater
+            <br />
+            PRESENTS:
+            <br />
+            <br />
+          </span>
+          <span class="the-morgan-family-theater-presents-titanic-8-5-5-00-pm-span2">
+            Titanic
+            <br />
+          </span>
+          <span class="the-morgan-family-theater-presents-titanic-8-5-5-00-pm-span3">
+            <br />
+            $8.5 | 5:00 PM
+          </span>
+        </span>
+      </div>
+
+      <img class="image-3" src="{{ url_for('static', filename='images/image-30.png') }}" />
+      <div class="py-ticket">PyTicket</div>
+      <div class="rectangle-133"></div>
+      <div class="rectangle-18"></div>
+      <div class="rectangle-19"></div>
+      <div class="rectangle-20"></div>
+      <div class="rectangle-21"></div>
+
+      <a href="{{ url_for('book_ticket', id=2) }}" class="book-now">BOOK NOW</a> <!-- dark knight-->
+      <a href="{{ url_for('book_ticket', id=3) }}" class="book-now2">BOOK NOW</a> <!-- Interstellar -->
+      <a href="{{ url_for('book_ticket', id=4) }}" class="book-now3">BOOK NOW</a> <!--  -->
+      <a href="{{ url_for('book_ticket', id=5) }}" class="book-now4">BOOK NOW</a> <!-- avengers -->
+      <a href="{{ url_for('book_ticket', id=1) }}" class="book-now5">BOOK NOW</a> <!-- inception -->
+    </div>
+  </div>
+
+</body>
+</html>

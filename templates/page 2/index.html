@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/css/page2-vars.css">
+  <link rel="stylesheet" href="/static/css/page2-style.css">
+  <style>
+   a,
+   button,
+   input,
+   select,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   * {
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+       border: none;
+       text-decoration: none;
+       background: none;
+       -webkit-font-smoothing: antialiased;
+   }
+
+   menu, ol, ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+   }
+  </style>
+  <title>Book Ticket for {{ movie.title }}</title>
+</head>
+<body>
+  <div class="booking">
+    <div class="rectangle-1"></div>
+    <div class="frame-5">
+      <div class="frame-10">
+        <img class="ellipse-1" src="{{ url_for('static', filename='images/ellipse-10.svg') }}"  />
+        <div class="discription">DESCRIPTION</div>
+      </div>
+    </div>
+    <div class="name name-span">
+      <form method="POST">
+        Name:
+        <input type="text" name="name" class="styled-input" required placeholder="Enter your name" />
+    </div>
+    <div class="seats">
+      Seats:
+      <input type="number" class="styled-input" name="seats" min="1" required placeholder="Enter number of seats" />
+    </div>
+    <div class="frame-8">
+      <button type="submit" class="book-now">BOOK NOW</button>
+      </form>
+    </div>
+    <div class="book-ticket-for-inception">BOOK TICKET FOR {{ movie.title }}</div>
+    <img class="image-2" src="{{ movie.image_url }}" alt="{{ movie.title }}" />
+    <div class="a-mind-bending-thriller-directed-by-christopher-nolan">
+      {{ movie.description }}
+    </div>
+  </div>
+</body>
+</html>

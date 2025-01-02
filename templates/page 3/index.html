@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/css/page3-vars.css">
+  <link rel="stylesheet" href="/static/css/page3-style.css">
+  <style>
+   a,
+   button,
+   input,
+   select,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   * {
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+       border: none;
+       text-decoration: none;
+       background: none;
+       -webkit-font-smoothing: antialiased;
+   }
+
+   menu, ol, ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+   }
+   </style>
+  <title>Booking Confirmation</title>
+</head>
+<body>
+  <div class="confrimation-page">
+    <div class="rectangle-1"></div>
+    <div class="booking-confirmation">BOOKING CONFIRMATION</div>
+    <div class="rectangle-15"></div>
+    <div class="movie-title-your-name-name-seats-seats-showtime-movie-showtime-total-price-movie-price-seats-your-tickets-have-been-successfully-booked">
+      <span>
+        <span class="movie-title-your-name-name-seats-seats-showtime-movie-showtime-total-price-movie-price-seats-your-tickets-have-been-successfully-booked-span">
+          {{ movie.title }}
+          <br />
+          <br />
+          Your Name:
+        </span>
+        <span class="movie-title-your-name-name-seats-seats-showtime-movie-showtime-total-price-movie-price-seats-your-tickets-have-been-successfully-booked-span2">
+          {{ name }}
+          <br />
+        </span>
+        <span class="movie-title-your-name-name-seats-seats-showtime-movie-showtime-total-price-movie-price-seats-your-tickets-have-been-successfully-booked-span3">
+          <br />
+          Seats:
+        </span>
+        <span class="movie-title-your-name-name-seats-seats-showtime-movie-showtime-total-price-movie-price-seats-your-tickets-have-been-successfully-booked-span4">
+          {{ seats }}
+          <br />
+        </span>
+        <span class="movie-title-your-name-name-seats-seats-showtime-movie-showtime-total-price-movie-price-seats-your-tickets-have-been-successfully-booked-span5">
+          <br />
+          Showtime:
+        </span>
+        <span class="movie-title-your-name-name-seats-seats-showtime-movie-showtime-total-price-movie-price-seats-your-tickets-have-been-successfully-booked-span6">
+          {{ movie.showtime }}
+          <br />
+        </span>
+        <span class="movie-title-your-name-name-seats-seats-showtime-movie-showtime-total-price-movie-price-seats-your-tickets-have-been-successfully-booked-span7">
+          <br />
+          Total Price:
+        </span>
+        <span class="movie-title-your-name-name-seats-seats-showtime-movie-showtime-total-price-movie-price-seats-your-tickets-have-been-successfully-booked-span8">
+          ${{ total_price }}
+          <br />
+        </span>
+        <span class="movie-title-your-name-name-seats-seats-showtime-movie-showtime-total-price-movie-price-seats-your-tickets-have-been-successfully-booked-span9">
+          <br />
+          <br />
+          <br />
+          <br />
+          Your tickets have been successfully booked!
+        </span>
+      </span>
+    </div>
+    <div class="rectangle-16"></div>
+    <img class="vector" src="/static/images/vector0.svg" />
+    <img class="mdi-tick-circle-outline" src="/static/images/mdi-tick-circle-outline0.svg" />
+    <div class="qr-ticket-movie-name-movie-title-seats-seats">
+      QR-TICKET
+      <br />
+      <br />
+      Movie name: {{ movie.title }}
+      <br />
+      <br />
+      Seats: {{ seats }}
+      <br />
+    </div>
+  </div>
+</body>
+</html>

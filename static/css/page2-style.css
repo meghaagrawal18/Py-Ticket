@@ -1,0 +1,212 @@
+.booking,
+.booking * {
+  box-sizing: border-box;
+}
+.booking {
+  background: #cff500;
+  height: 986px;
+  position: relative;
+  overflow: hidden;
+}
+.rectangle-1 {
+  background: #fff2d0;
+  border-radius: 19px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 9px;
+  width: 1241px;
+  height: 954px;
+  position: absolute;
+  left: 19px;
+  top: 16px;
+}
+.frame-5 {
+  background: #ffffff;
+  border-radius: 38px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 9px;
+  width: 475px;
+  height: 372px;
+  position: absolute;
+  left: 53px;
+  top: 135px;
+  overflow: hidden;
+}
+.frame-10 {
+  background: #000000;
+  border-radius: 14px;
+  width: 475px;
+  height: 135px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: hidden;
+}
+.ellipse-1 {
+  width: 16.8px;
+  height: 43.2px;
+  position: absolute;
+  left: 467.23px;
+  top: 35px;
+  transform: translate(-43.58px, -19.86px);
+  overflow: visible;
+}
+.discription {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  position: absolute;
+  left: 111px;
+  top: 67px;
+}
+.name {
+  color: #000000;
+  text-align: left;
+  position: absolute;
+  left: 94px;
+  top: 689px;
+}
+.name-span {
+  color: #000000;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+}
+.name-span2 {
+  color: #000000;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+.seats {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  position: absolute;
+  left: 94px;
+  top: 798px;
+}
+.frame-6 {
+  background: #ffffff;
+  border-radius: 19px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 4px;
+  width: 332px;
+  height: 65px;
+  position: absolute;
+  left: 242px;
+  top: 678px;
+  overflow: hidden;
+}
+.frame-7 {
+  background: #ffffff;
+  border-radius: 19px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 4px;
+  width: 332px;
+  height: 65px;
+  position: absolute;
+  left: 242px;
+  top: 787px;
+  overflow: hidden;
+}
+.book-ticket-for-inception {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  position: absolute;
+  left: 414px;
+  top: 51px;
+}
+.frame-8 {
+  background: #cff500;
+  border-radius: 11px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 3px;
+  width: 232px;
+  height: 60px;
+  position: absolute;
+  left: 242px;
+  top: 884px;
+  overflow: hidden;
+}
+.book-now {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  left: 49px;
+  top: 15px;
+}
+.box-1 {
+  color: #000000;
+  text-align: centre;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  left: 49px;
+  top: 15px;
+}
+
+.styled-input {
+  width: 80%; /* Adjust the width as needed */
+  max-width: 200px; /* Optional: set a max width for responsiveness */
+  padding: 15px;
+  font-size: 18px; /* Bigger text */
+  font-family: 'Arial', sans-serif; /* Use any preferred font family */
+  color: #333; /* Text color */
+  background-color: #fff; /* White box */
+  border: 2px solid #ccc; /* Border styling */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.styled-input::placeholder {
+  color: #aaa; /* Placeholder text color */
+  font-style: italic; /* Optional: Italicize the placeholder */
+}
+
+.styled-input:focus {
+  outline: none; /* Remove default focus outline */
+  border-color: #4CAF50; /* Change border color on focus */
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.3); /* Add glow effect */
+}
+
+
+.image-2 {
+  border-radius: 19px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 9px;
+  width: 537px;
+  height: 797px;
+  position: absolute;
+  left: 681px;
+  top: 135px;
+  object-fit: cover;
+}
+.a-mind-bending-thriller-directed-by-christopher-nolan {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  position: absolute;
+  left: 66px;
+  top: 291px;
+  width: 394px;
+  height: 233px;
+}
