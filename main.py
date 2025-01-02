@@ -2,7 +2,9 @@ from flask import Flask, render_template, request, redirect, url_for
 import mysql.connector
 from mysql.connector import Error
 from datetime import datetime
-
+import matplotlib.pyplot as plt
+import io
+import base64
 app = Flask(__name__)
 
 
@@ -116,6 +118,49 @@ def booking_confirmation(booking_id):
         print(f"Error retrieving booking: {e}")
         return "Error processing your request", 500
 
+
+@app.route('/analytics')
+def analytics():
+    connection = get_connection()
+    cursor = connection.cursor(dictionary=True)
+
+    # Query to count bookings per movie
+    cursor.execute("""
+        SELECT 
+            m.title,
+            COUNT(b.id) as booking_count
+        FROM movie m
+        LEFT JOIN bookings b ON m.id = b.movie_id
+        GROUP BY m.id, m.title
+        ORDER BY booking_count DESC
+    """)
+
+    data = cursor.fetchall()
+    connection.close()
+
+    # Extract data for plotting
+    movie_titles = [item['title'] for item in data]
+    booking_counts = [item['booking_count'] for item in data]
+
+    # Create the bar plot
+    plt.figure(figsize=(12, 6))
+    plt.bar(movie_titles, booking_counts, color='skyblue')
+    plt.title('Movie Bookings Analysis')
+    plt.xlabel('Movies')
+    plt.ylabel('Number of Bookings')
+    plt.xticks(rotation=45, ha='right')
+    plt.tight_layout()
+
+    # Save plot to memory
+    img = io.BytesIO()
+    plt.savefig(img, format='png')
+    img.seek(0)
+    plt.close()
+
+    # Convert plot to base64 string for HTML
+    graph_url = base64.b64encode(img.getvalue()).decode()
+
+    return render_template('analytics.html', graph_url=graph_url)
 
 if __name__ == '__main__':
     app.run(debug=True)

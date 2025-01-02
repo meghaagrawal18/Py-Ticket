@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Analytics</title>
+    <style>
+        body {
+        background-color: rgb(31, 29, 43);
+    }
+    .analytics-container {
+        width: 80%;
+        margin: 50px auto;
+        text-align: center;
+        color: white;
+    }
+    .graph-image {
+        max-width: 100%;
+        height: auto;
+    }
+    </style>
+</head>
+<body>
+    <div class="analytics-container">
+        <h1>Movie Booking Analytics</h1>
+        <img src="data:image/png;base64,{{ graph_url }}" alt="Booking Analysis Graph" class="graph-image">
+    </div>
+</body>
+</html>
